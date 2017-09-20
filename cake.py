@@ -1,4 +1,5 @@
-from core import Mesh
+from .core import Mesh
+
 class Cake(Mesh):
     def geo(self):
         # First cylinder
