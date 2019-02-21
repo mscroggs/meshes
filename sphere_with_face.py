@@ -62,7 +62,7 @@ class SphereWithFace(Mesh):
                 Ruled Surface(28) = {27};
 
                 Line Loop(29) = {13,14,15,16};
-                Flat Surface(30) = {29};
+                Plane Surface(30) = {29};
 
 
 
