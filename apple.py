@@ -10,26 +10,26 @@ class Apple(Mesh):
         geo = "R = 1.2;r = 0.3;th=0.3;dep=2;\n"
         geo += """
                 Point(1) = {1.3,0,0,lc};
-                Point(2) = {1.3,0,3.3,lc};
-                Point(3) = {0,0,2.41,lc};
-                Point(4) = {0.51,0,-3,lc};
+                Point(2) = {1.3,0,-3.3,lc};
+                Point(3) = {0,0,-2.41,lc};
+                Point(4) = {0.51,0,3,lc};
                 Point(5) = {3.2,0,0,lc};
                 Point(6) = {0,0,0,lc};
-                Point(7) = {0,0,-3,lc};
+                Point(7) = {0,0,3,lc};
 
                 Point(11) = {0,1.3,0,lc};
-                Point(12) = {0,1.3,3.3,lc};
-                Point(14) = {0,0.51,-3,lc};
+                Point(12) = {0,1.3,-3.3,lc};
+                Point(14) = {0,0.51,3,lc};
                 Point(15) = {0,3.2,0,lc};
 
                 Point(21) = {-1.3,0,0,lc};
-                Point(22) = {-1.3,0,3.3,lc};
-                Point(24) = {-0.51,0,-3,lc};
+                Point(22) = {-1.3,0,-3.3,lc};
+                Point(24) = {-0.51,0,3,lc};
                 Point(25) = {-3.2,0,0,lc};
 
                 Point(31) = {0,-1.3,0,lc};
-                Point(32) = {0,-1.3,3.3,lc};
-                Point(34) = {0,-0.51,-3,lc};
+                Point(32) = {0,-1.3,-3.3,lc};
+                Point(34) = {0,-0.51,3,lc};
                 Point(35) = {0,-3.2,0,lc};
 
                 Ellipse(1) = {3,1,2,5};
@@ -61,15 +61,15 @@ class Apple(Mesh):
                 Line Loop(8) = {9,-31,21};
                 Line Loop(9) = {10,-1,31};
 
-                Ruled Surface(1) = {1};
-                Ruled Surface(2) = {2};
-                Ruled Surface(3) = {3};
-                Ruled Surface(4) = {4};
-                Ruled Surface(5) = {5};
-                Ruled Surface(6) = {6};
-                Ruled Surface(7) = {7};
-                Ruled Surface(8) = {8};
-                Ruled Surface(9) = {9};
+                Ruled Surface(1) = {-1};
+                Ruled Surface(2) = {-2};
+                Ruled Surface(3) = {-3};
+                Ruled Surface(4) = {-4};
+                Ruled Surface(5) = {-5};
+                Ruled Surface(6) = {-6};
+                Ruled Surface(7) = {-7};
+                Ruled Surface(8) = {-8};
+                Ruled Surface(9) = {-9};
 
                 """
         return geo
