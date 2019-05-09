@@ -116,7 +116,7 @@ class BottleAndCork(Mesh):
                 """
         for i in range(1,19):
             geo += "Ruled Surface("+str(i)+") = {"+str(i)+"};\n"
-
+        geo += "Physical Surface(2) = {"+",".join(str(i) for i in range(1,19))+"};\n"
         # Cork
         # cr is radius of cork
         # cz is z-value of centre cork
@@ -185,5 +185,6 @@ class BottleAndCork(Mesh):
 
         for i in range(200,213):
             geo += "Ruled Surface("+str(i)+") = {"+str(i)+"};\n"
+        geo += "Physical Surface(1) = {"+",".join(str(i) for i in range(200,213))+"};"
         return geo
 
